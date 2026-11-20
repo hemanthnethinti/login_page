@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - VJ Marketing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1 id="formTitle">Welcome Back!</h1>
+            <p class="subtitle" id="formSubtitle">Login to continue your journey</p>
+
+            <form id="loginForm">
+                <div class="input-group signup-field hidden">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" autocomplete="name">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="password-box">
+                        <input type="password" id="password" placeholder="Enter your password"
+                            autocomplete="current-password" required>
+                        <button type="button" id="togglePassword">Show</button>
+                    </div>
+                </div>
+
+                <div class="options login-only">
+                    <label class="remember">
+                        <input type="checkbox" id="remember">
+                        Remember me
+                    </label>
+                    <a href="#" id="forgotPassword">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="login-btn">
+                    <span id="submitText">Login</span>
+                </button>
+                <p id="message"></p>
+            </form>
+
+            <p class="signup">
+                <span id="switchPrompt">Don't have an account?</span>
+                <a href="#" id="switchMode">Sign Up</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
